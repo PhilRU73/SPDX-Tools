@@ -16,16 +16,6 @@
 */
 package org.spdx.rdfparser;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-
-import org.spdx.spdxspreadsheet.InvalidLicenseStringException;
-import org.spdx.rdfparser.SpdxRdfConstants;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.rdf.model.Model;
@@ -33,6 +23,14 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.util.FileManager;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
+import org.spdx.spdxspreadsheet.InvalidLicenseStringException;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 
 /**
  * Factory for creating SPDXLicenseInfo objects from a Jena model
@@ -79,7 +77,7 @@ public class SPDXLicenseInfoFactory {
 	public static final String NONE_LICENSE_NAME = "NONE";
 
 	public static final String STANDARD_LICENSE_URI_PREFIX = "http://spdx.org/licenses/";
-	private static final String STANDARD_LICENSE_RDF_LOCAL_DIR = "resources" + "/" + "stdlicenses";
+	private static final String STANDARD_LICENSE_RDF_LOCAL_DIR = "resources" + "/" + "resources/stdlicenses";
 
 	private static final String STANDARD_LICENSE_RDF_LOCAL_FILENAME = STANDARD_LICENSE_RDF_LOCAL_DIR + "/" + "index.html";
 	

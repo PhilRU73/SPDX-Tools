@@ -16,16 +16,16 @@
 */
 package org.spdx.rdfparser;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Property;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * A specific form of license information where there is a set of licenses

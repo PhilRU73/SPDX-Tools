@@ -16,16 +16,8 @@
  */
 package org.spdx.spdxspreadsheet;
 
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.spdx.rdfparser.SPDXLicenseInfo;
-import org.spdx.rdfparser.SPDXLicenseInfoFactory;
-import org.spdx.rdfparser.SPDXNoneLicense;
-import org.spdx.rdfparser.SPDXPackageInfo;
-import org.spdx.rdfparser.SpdxPackageVerificationCode;
+import org.apache.poi.ss.usermodel.*;
+import org.spdx.rdfparser.*;
 
 /**
  * Sheet describing the package information for an SPDX Document

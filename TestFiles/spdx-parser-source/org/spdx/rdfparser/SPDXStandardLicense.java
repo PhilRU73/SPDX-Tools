@@ -16,13 +16,13 @@
  */
 package org.spdx.rdfparser;
 
-import java.util.ArrayList;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Resource;
 import com.hp.hpl.jena.util.iterator.ExtendedIterator;
+
+import java.util.ArrayList;
 
 /**
  * @author Source Auditor

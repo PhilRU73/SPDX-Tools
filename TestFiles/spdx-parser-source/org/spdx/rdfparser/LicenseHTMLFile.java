@@ -16,15 +16,11 @@
  */
 package org.spdx.rdfparser;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import org.apache.commons.lang.StringEscapeUtils;
+
+import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import org.apache.commons.lang.StringEscapeUtils;
 
 /**
  * This class contains a formatted HTML file for a given license.  Specific

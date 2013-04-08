@@ -16,11 +16,11 @@
 */
 package org.spdx.rdfparser;
 
-import java.util.ArrayList;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Resource;
+
+import java.util.ArrayList;
 
 /**
  * This abstract class represents several ways of describing licensing information.

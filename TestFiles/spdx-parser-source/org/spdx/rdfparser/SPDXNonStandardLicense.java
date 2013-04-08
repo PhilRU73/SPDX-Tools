@@ -16,12 +16,12 @@
 */
 package org.spdx.rdfparser;
 
-import java.util.ArrayList;
-import java.util.regex.Pattern;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Resource;
+
+import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 /**
  * A non-standard license which is valid only within an SPDXAnalysis

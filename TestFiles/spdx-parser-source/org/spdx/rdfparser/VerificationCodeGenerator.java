@@ -119,7 +119,7 @@ public class VerificationCodeGenerator {
 			String[] filePathParts = filePath.split("/");
 			StringBuilder normalizedFilePath = new StringBuilder();
 			for (int j = 0; j < filePathParts.length; j++) {
-				if (filePathParts[j].equals("..")) {
+				if (filePathParts[j].equals("src/main")) {
 					// remove these from the filePath
 				} else {
 					if (j > 0) {

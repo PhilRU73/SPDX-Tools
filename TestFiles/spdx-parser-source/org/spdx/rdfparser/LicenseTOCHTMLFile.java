@@ -16,14 +16,10 @@
  */
 package org.spdx.rdfparser;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-
 import org.apache.commons.lang.StringEscapeUtils;
+
+import java.io.*;
+import java.util.ArrayList;
 
 /**
  * This class holds a formatted HTML file for a license table of contents

@@ -16,11 +16,11 @@
 */
 package org.spdx.rdfparser;
 
-import java.util.Iterator;
-
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.rdf.model.Model;
 import com.hp.hpl.jena.rdf.model.Resource;
+
+import java.util.Iterator;
 
 /**
  * A set of licenses where there is a choice of one of the licenses in the set

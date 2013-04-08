@@ -16,6 +16,11 @@
  */
 package org.spdx.spdxspreadsheet;
 
+import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
+import org.spdx.rdfparser.*;
+import org.spdx.rdfparser.SPDXDocument.SPDXPackage;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -24,21 +29,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
-import org.spdx.rdfparser.InvalidSPDXAnalysisException;
-import org.spdx.rdfparser.SPDXCreatorInformation;
-import org.spdx.rdfparser.SPDXDocument;
-import org.spdx.rdfparser.SPDXDocument.SPDXPackage;
-import org.spdx.rdfparser.SPDXFile;
-import org.spdx.rdfparser.SPDXLicenseInfoFactory;
-import org.spdx.rdfparser.SPDXNonStandardLicense;
-import org.spdx.rdfparser.SPDXReview;
-import org.spdx.rdfparser.SPDXPackageInfo;
-import org.spdx.rdfparser.SPDXStandardLicense;
-import org.spdx.rdfparser.SpdxRdfConstants;
-
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
 
 /**
  * Converts a spreadsheet to an SPDX RDF Analysis file

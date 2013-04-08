@@ -16,17 +16,12 @@
  */
 package org.spdx.rdfparser;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.util.HashSet;
-import java.util.Iterator;
-
 import org.spdx.spdxspreadsheet.SPDXLicenseSpreadsheet;
 import org.spdx.spdxspreadsheet.SpreadsheetException;
+
+import java.io.*;
+import java.util.HashSet;
+import java.util.Iterator;
 
 /**
  * Converts a spreadsheet containing SPDX License information into RDFA 
@@ -45,7 +40,7 @@ public class LicenseRDFAGenerator {
 		INVALID_FILE_CHARS.add(';'); INVALID_FILE_CHARS.add(':');
 		INVALID_FILE_CHARS.add('\''); INVALID_FILE_CHARS.add('"'); INVALID_FILE_CHARS.add('|');
 		INVALID_FILE_CHARS.add('\t'); INVALID_FILE_CHARS.add('?'); INVALID_FILE_CHARS.add('&');
-		INVALID_FILE_CHARS.add('³');
+		INVALID_FILE_CHARS.add('ï¿½');
 	}
 	static int MIN_ARGS = 2;
 	static int MAX_ARGS = 2;
