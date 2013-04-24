@@ -38,7 +38,7 @@ public class SPDXReaderTest {
     @Test
     public void testReadRdf() throws IOException, InvalidSPDXAnalysisException {
         File file = new File("Examples/SPDXRdfExample.rdf").getAbsoluteFile();
-        SPDXDocument document = SPDXReader.readRdf(file);
+        SPDXDocument document = new SPDXReader().readRdf(file);
         assertNotNull(document);
         assertEquals(0, document.verify().size());
     }
@@ -46,7 +46,7 @@ public class SPDXReaderTest {
     @Test
     public void testReadTag() throws Exception {
         File file = new File("Examples/SPDXTagExample.tag").getAbsoluteFile();
-        SPDXDocument document = SPDXReader.readTagFile(file);
+        SPDXDocument document = new SPDXReader().readTagFile(file);
         assertNotNull(document);
         assertEquals(0, document.verify().size());
     }
@@ -55,7 +55,7 @@ public class SPDXReaderTest {
     @Test
     public void testReadSpreadsheet() throws IOException, InvalidSPDXAnalysisException, SpreadsheetException {
         File file = new File("Examples/SPDXSpreadsheetExample.xls").getAbsoluteFile();
-        SPDXDocument document = SPDXReader.readSpreadsheet(file);
+        SPDXDocument document = new SPDXReader().readSpreadsheet(file);
         assertNotNull(document);
         assertEquals(0, document.verify().size());
     }

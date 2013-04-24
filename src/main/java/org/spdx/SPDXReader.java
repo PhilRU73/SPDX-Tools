@@ -44,6 +44,8 @@ import java.util.Properties;
  */
 public class SPDXReader {
 
+    /* --- Public methods --- */
+
     /**
      * Read SPDX Document from a RDFa file.
      *
@@ -54,7 +56,7 @@ public class SPDXReader {
      * @throws IOException In case of errors reading the given file.
      * @throws InvalidSPDXAnalysisException In case of errors in the file format.
      */
-    public static SPDXDocument readRdf(File rdfFile) throws IOException, InvalidSPDXAnalysisException {
+    public SPDXDocument readRdf(File rdfFile) throws IOException, InvalidSPDXAnalysisException {
         return SPDXDocumentFactory.creatSpdxDocument(rdfFile.getAbsolutePath());
     }
 
@@ -69,7 +71,7 @@ public class SPDXReader {
      * @throws InvalidSPDXAnalysisException In case of errors in the file format.
      * @throws SpreadsheetException In case of error in the spreadsheet format.
      */
-    public static SPDXDocument readSpreadsheet(File ssFile) throws IOException, InvalidSPDXAnalysisException, SpreadsheetException {
+    public SPDXDocument readSpreadsheet(File ssFile) throws IOException, InvalidSPDXAnalysisException, SpreadsheetException {
         Model model = ModelFactory.createDefaultModel();
         SPDXDocument analysis = new SPDXDocument(model);
         SPDXSpreadsheet ss = new SPDXSpreadsheet(ssFile, false, true);
@@ -90,7 +92,7 @@ public class SPDXReader {
      * @throws TokenStreamException
      * @throws Exception In case of an unchecked exception while parsing the tag value file.
      */
-    public static SPDXDocument readTagFile(File tagFile) throws Exception{
+    public SPDXDocument readTagFile(File tagFile) throws Exception{
         SPDXDocument analysis;
 
         FileInputStream fis = null;
