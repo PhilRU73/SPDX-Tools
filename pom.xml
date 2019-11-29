@@ -243,4 +243,17 @@
         </snapshotRepository>
     </distributionManagement>
 
+	<repositories>
+		<repository>
+            <id>wso2</id>
+            <name>WSO2</name>
+            <url>https://dist.wso2.org/maven2/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>ignore</checksumPolicy>
+            </releases>
+        </repository>
+	</repositories>
+
 </project>
